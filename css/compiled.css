@@ -4,6 +4,9 @@
   font-family: 'Gill Sans', 'Century Gothic', sans-serif; }
 
 /* todos van a tener 767 de widht? no solo por defecto aa*/
+title{
+  display: none;
+}
 .container {
   display: flex;
   
@@ -210,6 +213,9 @@
 @media screen and (min-width: 768px) {
   body {  
     background-color: yellow; }
+    title{
+  display: none;
+}
   .container {
     display: flex;
     justify-content: center;
@@ -251,12 +257,14 @@
 
 @media screen and (min-width: 1024px) {
   body {
-   
-    background-color: lightblue; }
+       background-color: lightblue; }
+       title{
+          display: none;
+        }
 
     .container .tree {
     padding-top: -50px;
-    width: 100%; 
+    width: 5  0%; 
     height: auto;}
   .container {
     display: flex;
@@ -295,4 +303,6 @@
     .container .top .fa.fa-bars {
       display: none; }
     .container .menu__list {
+       align-items: center;
+      justify-content: flex-start;
       display: flex; } }
