@@ -42,7 +42,9 @@
     background-color: white; }
   .container .tree {
     padding-top: -50px;
-    width: 15%; }
+    width: 50%  ;
+    height: auto;
+     }
   .container .incy {
     position: relative;
     font-size: 40px;
@@ -88,6 +90,7 @@
     padding: 3px; }
   .container .imag {
     width: 95%;
+    height: auto;
     margin: 10px auto; }
   .container .nombre {
     padding: 10px 0px 10px 20px;
@@ -207,6 +210,10 @@
     display: flex;
     justify-content: center;
     margin-bottom: 30px; }
+ .container .tree {
+    padding-top: -50px;
+    width: 50%; 
+    height: auto;}
     .container .replica .replica__box {
       width: 95%;
       display: flex;
@@ -241,6 +248,11 @@
 @media screen and (min-width: 1024px) {
   body {
     background-color: lightblue; }
+
+    .container .tree {
+    padding-top: -50px;
+    width: 100%; 
+    height: auto;}
   .container {
     display: flex;
     justify-content: center;
