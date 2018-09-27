@@ -1,19 +1,12 @@
 * {
-  border-size: border-size;
-  display: flex;
+  border-size: box-size;
   font-family: 'Gill Sans', 'Century Gothic', sans-serif; }
 
 /* todos van a tener 767 de widht? no solo por defecto aa*/
-title{
-  display: none;
-}
 .container {
   display: flex;
-  
   justify-content: center;
-  margin-bottom: 30px; 
-  width: 100%;
-  }
+  margin-bottom: 30px; }
   .container .container__marco {
     display: flex;
     flex-direction: column;
@@ -27,8 +20,8 @@ title{
       height: 64px;
       display: flex;
       align-items: center;
-      justify-content: center;
-       padding: 0 10px;
+      justify-content: flex-end;
+      padding: 0 10px;
       display: none; }
     .container .menu__option {
       padding: 0 12px;
@@ -48,12 +41,8 @@ title{
     /*esto se modifica al restirarse*/
     background-color: white; }
   .container .tree {
-    align-self: center;
-    justify-self: center;
     padding-top: -50px;
-    width: 200px  ;
-    height: 71px;
-     }
+    width: 15%; }
   .container .incy {
     position: relative;
     font-size: 40px;
@@ -99,7 +88,6 @@ title{
     padding: 3px; }
   .container .imag {
     width: 95%;
-    height: auto;
     margin: 10px auto; }
   .container .nombre {
     padding: 10px 0px 10px 20px;
@@ -213,19 +201,12 @@ title{
     display: flex; }
 
 @media screen and (min-width: 768px) {
-  body {  
+  body {
     background-color: yellow; }
-    title{
-  display: none;
-}
   .container {
     display: flex;
     justify-content: center;
     margin-bottom: 30px; }
- .container .tree {
-    padding-top: -50px;
-    width: 50%; 
-    height: auto;}
     .container .replica .replica__box {
       width: 95%;
       display: flex;
@@ -259,15 +240,7 @@ title{
 
 @media screen and (min-width: 1024px) {
   body {
-       background-color: lightblue; }
-       title{
-          display: none;
-        }
-
-    .container .tree {
-    padding-top: -50px;
-    width: 5  0%; 
-    height: auto;}
+    background-color: lightblue; }
   .container {
     display: flex;
     justify-content: center;
@@ -305,6 +278,4 @@ title{
     .container .top .fa.fa-bars {
       display: none; }
     .container .menu__list {
-       align-items: center;
-      justify-content: flex-start;
       display: flex; } }
