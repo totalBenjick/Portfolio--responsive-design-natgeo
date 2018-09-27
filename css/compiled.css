@@ -20,8 +20,8 @@
       height: 64px;
       display: flex;
       align-items: center;
-      justify-content: flex-end;
-      padding: 0 10px;
+      justify-content: center;
+       padding: 0 10px;
       display: none; }
     .container .menu__option {
       padding: 0 12px;
@@ -41,9 +41,11 @@
     /*esto se modifica al restirarse*/
     background-color: white; }
   .container .tree {
+    align-self: center;
+    justify-self:center;
     padding-top: -50px;
-    width: 50%  ;
-    height: auto;
+    width: 200px  ;
+    height: 71px;
      }
   .container .incy {
     position: relative;
