@@ -2,10 +2,19 @@
   border-size: box-size;
   font-family: 'Gill Sans', 'Century Gothic', sans-serif; }
 
+  @viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+} 
+
+html{
+  min-width: 490px;
+}
+
 /* todos van a tener 767 de widht? no solo por defecto aa*/
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 30px; }
   .container .container__marco {
     display: flex;
@@ -42,7 +51,8 @@
     background-color: white; }
   .container .tree {
     padding-top: -50px;
-    width: 15%; }
+    width: 50%;
+    height: auto;    }
   .container .incy {
     position: relative;
     font-size: 40px;
@@ -279,4 +289,5 @@
     .container .top .fa.fa-bars {
       display: none; }
     .container .menu__list {
-      display: flex; } }
+      display: flex; 
+      justify-content: flex-start;} }
